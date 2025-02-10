@@ -1,0 +1,30 @@
+@Metadata.layer: #CORE
+annotate entity Z_CDS_CLN_LIB_0891
+    with 
+{
+
+  
+  @UI.facet: [{ id: 'Clientes' , label: 'Clientes', type:#COLLECTION , position: 10  },
+   { id: 'Cliente', parentId: 'Clientes', label: 'Detalles' , type: #FIELDGROUP_REFERENCE , position: 10 ,targetQualifier: 'Clientes'}]
+
+
+   @UI.lineItem: [{ position: 10 , importance: #HIGH  }]
+   IdCliente;
+     @UI.lineItem: [{ position: 20 , importance: #HIGH  }]
+     @UI.fieldGroup: [{qualifier: 'Clientes',  position: 10 }]
+   Idlibro;
+     @UI.lineItem: [{ position: 30 , importance: #HIGH  }]
+       @UI.fieldGroup: [{qualifier: 'Clientes',  position: 20 }]
+   Nombre;
+     @UI.lineItem: [{ position: 40 , importance: #HIGH  }]
+     @UI.fieldGroup: [{qualifier: 'Clientes',  position: 30 }]
+   Apellidos;
+     @UI.lineItem: [{ position: 50 , importance: #HIGH  }]
+   Email;
+     @UI.lineItem: [{ position: 60 , importance: #HIGH  }]
+   Url;
+   
+   
+   
+    
+}

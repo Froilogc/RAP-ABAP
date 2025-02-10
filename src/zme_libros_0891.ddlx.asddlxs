@@ -1,0 +1,72 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Libro',
+    typeNamePlural: 'Libros',
+    typeImageUrl: 'URL',
+    imageUrl: '',
+    title: {
+        type: #STANDARD,
+        label: '',
+        iconUrl: '',
+        criticality: '',
+        criticalityRepresentation: #WITHOUT_ICON,
+        value: 'IdLibro',
+        valueQualifier: '',
+        targetElement: '',
+        url: ''
+    },
+    description: {
+        type: #STANDARD,
+        label: '',
+        iconUrl: '',
+        criticality: '',
+        criticalityRepresentation: #WITHOUT_ICON,
+        value: 'Titulo',
+        valueQualifier: '',
+        targetElement: '',
+        url: ''
+    }
+}
+@Search.searchable: true
+annotate entity Z_CDS_LIBROS_0891 with
+{
+  @UI.facet: [{ id: 'Libros' , label: 'Detalles de Libro', type:#COLLECTION , position: 10  },
+   { id: 'Libro', parentId: 'Libros', label: 'Detalles' , type: #FIELDGROUP_REFERENCE , position: 10 ,targetQualifier: 'Libros'},
+   { id: 'Cliente' , label: 'Clientes', type:#LINEITEM_REFERENCE , position: 20 , targetElement: 'Clientes'}]
+
+  @UI.fieldGroup: [{qualifier: 'Libros',  position: 10 }]
+  IdLibro;
+  @UI.fieldGroup: [{qualifier: 'Libros',  position: 20 }]
+  @UI.selectionField: [{ position: 10 }]
+  Titulo;
+  @UI.fieldGroup: [{qualifier: 'Libros',  position: 30 }]
+  Autor;
+
+//
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'Z_CDS_CATEGO_0891', element: 'BiCateg'}}]
+    @UI.selectionField: [{ position: 20 }]
+  BiCateg;
+  @UI.lineItem: [{ position: 20 , importance: #HIGH  }]
+  @Search: {
+    defaultSearchElement: true,
+    ranking: #MEDIUM,
+    fuzzinessThreshold: 0.8 }
+  Editoral;
+  @UI.lineItem: [{ position: 30 , importance: #HIGH  }]
+  Idioma;
+  @UI.lineItem: [{ position: 40 , importance: #HIGH  }]
+  Paginas;
+  @UI.lineItem: [{ position: 50 , importance: #HIGH  }]
+  Precio;
+  @UI.lineItem: [{ position: 60 , importance: #HIGH  }]
+  Moneda;
+  @UI.lineItem: [{ position: 70 , importance: #HIGH  }]
+  Formato;
+  @UI.lineItem: [{ position: 80 , importance: #HIGH  }]
+  Ventas;
+  @UI.lineItem: [{ position: 80 , importance: #HIGH ,criticality: 'estado' }]
+  estado;
+
+
+
+}

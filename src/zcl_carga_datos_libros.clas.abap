@@ -97,9 +97,11 @@ lt_LIBROS = VALUE #(
                             ( id_libro  = '1234567891'   bi_categ = '1'    titulo  = 'El Monje'  autor = 'Ramirez'
                           editoral  = 'Editoral universal'  idioma = 'E' paginas = '1000'  precio = '1000' moneda = 'DOP' formato = 'B'  url = '' )
                             ( id_libro  = '1234567892'   bi_categ = '2'    titulo  = 'El Millonario'  autor = 'Ramirez Perez'
-                          editoral  ='Editoral universal' idioma = 'S' paginas = '56'  precio = '300' moneda = 'USD' formato = 'A'  url = '' )
+                          editoral  = 'Editoral universal' idioma = 'S' paginas = '56'  precio = '300' moneda = 'USD' formato = 'A'  url = '' )
                             ( id_libro  = '1234567893'   bi_categ = '4'    titulo  = 'Don Quijote'  autor = 'Tanto'
-                          editoral  = 'Editoral'  idioma = 'E' paginas = '487'  precio = '200' moneda = 'ES' formato = 'T'  url = '' ) ).
+                          editoral  = 'Editoral'  idioma = 'E' paginas = '487'  precio = '200' moneda = 'USD' formato = 'T'  url = '' )
+                          ( id_libro  = '1234567894'   bi_categ = '4'    titulo  = 'El Gavilan'  autor = 'Tantost'
+                          editoral  = 'Editoral'  idioma = 'E' paginas = '48'  precio = '200' moneda = 'USD' formato = 'T'  url = '' ) ).
 
 
 

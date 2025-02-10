@@ -1,0 +1,6 @@
+@EndUserText.label: 'WS Libros'
+define service Z_WS_LIBROS_0891 {
+  expose Z_CDS_LIBROS_0891;
+  expose Z_CDS_CLN_LIB_0891;
+  expose Z_CDS_CATEGORIAS;
+}
