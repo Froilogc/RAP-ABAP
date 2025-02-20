@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_carga_datos_libros IMPLEMENTATION.
+CLASS ZCL_CARGA_DATOS_LIBROS IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -68,13 +68,13 @@ lt_CATEGORIAS = VALUE #(
 ** Clientes**
 lt_CLIENTES = VALUE #(
                         ( id_cliente  = '234567890123456789012345678901'  tipo_acceso = '1'   nombre = 'Antoni'  apellidos = 'Ramirez Perez'
-                         email = 'an1@prueba1.com'  url = 'https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/Aston_Martin-DB9_2013_01.jpg?itok=bGlXq8UF' )
+                         email = 'an1@prueba1.com'  url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBsbzMLn1z02F7TUU4ImU9rGiRTpGuKtK-jQ&s' )
                         ( id_cliente  = '234567890123456789012345678902'  tipo_acceso = '1'   nombre = 'Pedro'   apellidos = 'Guzman Martinez'
-                        email = 'an2@prueba1.com' url = 'https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/Aston_Martin-DB9_2013_01.jpg?itok=bGlXq8UF'  )
+                        email = 'an2@prueba1.com' url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBsbzMLn1z02F7TUU4ImU9rGiRTpGuKtK-jQ&s'  )
                         ( id_cliente  = '234567890123456789012345678903'  tipo_acceso = '3'   nombre = 'Juan'   apellidos = 'Gomez Castillo'
-                        email = 'an3@prueba1.com'  url = 'https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/Aston_Martin-DB9_2013_01.jpg?itok=bGlXq8UF'  )
+                        email = 'an3@prueba1.com'  url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBsbzMLn1z02F7TUU4ImU9rGiRTpGuKtK-jQ&s'  )
                         ( id_cliente  = '234567890123456789012345678904'  tipo_acceso = '2'   nombre = 'Jean'   apellidos = 'Perez Rodriguez'
-                         email = 'an4@prueba1.com'  url = 'https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/Aston_Martin-DB9_2013_01.jpg?itok=bGlXq8UF'  ) ).
+                         email = 'an4@prueba1.com'  url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBsbzMLn1z02F7TUU4ImU9rGiRTpGuKtK-jQ&s'  ) ).
 
 
 
@@ -93,15 +93,20 @@ lt_CLIENTES = VALUE #(
 
 lt_LIBROS = VALUE #(
                         ( id_libro  = '1234567890'   bi_categ = '1'    titulo  = 'El principito'  autor = 'Desconocido'
-                          editoral  = 'Editoral universal'  idioma = 'S' paginas = '200'  precio = '23.2' moneda = 'USD' formato = 'A'  url = '' )
+                          editoral  = 'Editoral universal'  idioma = 'S' paginas = '200'  precio = '23.2' moneda = 'USD' formato = 'A'  url =
+'https://images.vexels.com/media/users/3/255333/isolated/preview/1ab1c05d2e8b34c0b0688b0de27fa540-dibujos-animados-de-libros-escolares.png' )
                             ( id_libro  = '1234567891'   bi_categ = '1'    titulo  = 'El Monje'  autor = 'Ramirez'
-                          editoral  = 'Editoral universal'  idioma = 'E' paginas = '1000'  precio = '1000' moneda = 'DOP' formato = 'B'  url = '' )
+                          editoral  = 'Editoral universal'  idioma = 'E' paginas = '1000'  precio = '1000' moneda = 'DOP' formato = 'B'  url =
+'https://images.vexels.com/media/users/3/255333/isolated/preview/1ab1c05d2e8b34c0b0688b0de27fa540-dibujos-animados-de-libros-escolares.png' )
                             ( id_libro  = '1234567892'   bi_categ = '2'    titulo  = 'El Millonario'  autor = 'Ramirez Perez'
-                          editoral  = 'Editoral universal' idioma = 'S' paginas = '56'  precio = '300' moneda = 'USD' formato = 'A'  url = '' )
+                          editoral  = 'Editoral universal' idioma = 'S' paginas = '56'  precio = '300' moneda = 'USD' formato = 'A'  url =
+'https://images.vexels.com/media/users/3/255333/isolated/preview/1ab1c05d2e8b34c0b0688b0de27fa540-dibujos-animados-de-libros-escolares.png' )
                             ( id_libro  = '1234567893'   bi_categ = '4'    titulo  = 'Don Quijote'  autor = 'Tanto'
-                          editoral  = 'Editoral'  idioma = 'E' paginas = '487'  precio = '200' moneda = 'USD' formato = 'T'  url = '' )
+                          editoral  = 'Editoral'  idioma = 'E' paginas = '487'  precio = '200' moneda = 'USD' formato = 'T'  url =
+'https://images.vexels.com/media/users/3/255333/isolated/preview/1ab1c05d2e8b34c0b0688b0de27fa540-dibujos-animados-de-libros-escolares.png' )
                           ( id_libro  = '1234567894'   bi_categ = '4'    titulo  = 'El Gavilan'  autor = 'Tantost'
-                          editoral  = 'Editoral'  idioma = 'E' paginas = '48'  precio = '200' moneda = 'USD' formato = 'T'  url = '' ) ).
+                          editoral  = 'Editoral'  idioma = 'E' paginas = '48'  precio = '200' moneda = 'USD' formato = 'T'  url =
+'https://images.vexels.com/media/users/3/255333/isolated/preview/1ab1c05d2e8b34c0b0688b0de27fa540-dibujos-animados-de-libros-escolares.png' ) ).
 
 
 
@@ -119,11 +124,15 @@ lt_LIBROS = VALUE #(
 
 
 lt_cLIENTE_LIBROS = VALUE #(
-                        ( id_cliente  = '234567890123456789012345678901'   id_libro = '1234567890'  )
-                         ( id_cliente  = '234567890123456789012345678901'   id_libro = '1234567891'  )
+                           ( id_cliente  = '234567890123456789012345678901'   id_libro = '1234567890'  )
+                           ( id_cliente  = '234567890123456789012345678901'   id_libro = '1234567891'  )
                            ( id_cliente  = '234567890123456789012345678902'   id_libro = '1234567890'  )
-                             ( id_cliente  = '234567890123456789012345678902'   id_libro = '1234567893'  )
-                                ( id_cliente  = '234567890123456789012345678904'   id_libro = '1234567892'  ) ).
+                           ( id_cliente  = '234567890123456789012345678902'   id_libro = '1234567893'  )
+                           ( id_cliente  = '234567890123456789012345678904'   id_libro = '1234567892'  )
+                           ( id_cliente  = '234567890123456789012345678904'   id_libro = '1234567890'  )
+                           ( id_cliente  = '234567890123456789012345678904'   id_libro = '1234567893'  )
+                           ( id_cliente  = '234567890123456789012345678904'   id_libro = '1234567891'  )
+                           ( id_cliente  = '234567890123456789012345678903'   id_libro = '1234567890'  )  ).
 
 
 
@@ -139,6 +148,4 @@ lt_cLIENTE_LIBROS = VALUE #(
     out->write( 'ZTB_CLN_LIB_0891 data inserted successfully!' ).
 
   ENDMETHOD.
-
-  ENDCLASS.
-
+ENDCLASS.

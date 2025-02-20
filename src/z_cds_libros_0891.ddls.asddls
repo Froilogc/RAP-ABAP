@@ -30,16 +30,17 @@ association [0..1] to Z_CDS_CATEGO_0891 as Categorias on $projection.BiCateg = C
     case
 //    Si Ventas
     when Ventas.Ventas = 0 
-    then '0'
+    then '5'
 //    Con ventas pocas
-    when Ventas.Ventas between 1 and 4
+    when Ventas.Ventas = 1
     then '1'
 //   Con ventas moderadas
-   when Ventas.Ventas between 5 and 6
+   when Ventas.Ventas = 2
     then '2'
 //    Con Muchas ventas
     else '3'
     end as estado,
+    '' as icon,
     Clientes 
     
 }
