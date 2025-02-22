@@ -1,0 +1,26 @@
+CLASS zcl_delete_table_0891 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_DELETE_TABLE_0891 IMPLEMENTATION.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+    DELETE FROM ZTB_CATEGO_0891.
+
+    if SY-SUBRC EQ 0.
+      OUT->write( 'All data deleted' ).
+    endif.
+
+  ENDMETHOD.
+ENDCLASS.
